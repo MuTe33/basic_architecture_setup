@@ -10,11 +10,12 @@ abstract class BaseRepository {
     return DioException.createFromDioError(error.response.statusCode);
   }
 
-  T checkResponse<T>(HttpResponse<DataResponse<T>> response) {
-    if (response.response.statusCode >= 400) {
-      throw DioException.createFromDioError(response.response.statusCode);
-    } else if (response.response.statusCode == 200 && response.data != null) {
-      return response.data.data;
+  T checkResponse<T>(HttpResponse<DataResponse<T>> httpResponse) {
+    if (httpResponse.response.statusCode >= 400) {
+      throw DioException.createFromDioError(httpResponse.response.statusCode);
+    } else if (httpResponse.response.statusCode == 200 &&
+        httpResponse.data != null) {
+      return httpResponse.data.data;
     } else {
       return null;
     }

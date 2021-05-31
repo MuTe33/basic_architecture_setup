@@ -54,7 +54,6 @@ Future<void> _initNetworking() async {
     responseBody: true,
     error: true,
     compact: true,
-    maxWidth: 120,
   ));
 
   _l.registerSingleton(dioInstance);
@@ -79,6 +78,5 @@ void _initViewModels() {
 
 void _initUseCases() {
   _l.registerLazySingleton(() => GetAllUserUseCase(_l.get()));
-
   _l.registerLazySingleton(() => GetAccessTokenUseCase(_l.get()));
 }
