@@ -1,4 +1,4 @@
-import 'package:basic_architecture_setup/feature/test_page_view_model.dart';
+import 'package:basic_architecture_setup/feature/testpage/test_page_view_model.dart';
 import 'package:basic_architecture_setup/locator.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';

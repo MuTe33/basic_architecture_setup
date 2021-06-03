@@ -4,6 +4,8 @@ import 'package:basic_architecture_setup/domain/use_case/get_access_token_use_ca
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 
+// Every api call needs an authentication, this intercepts every call and adds
+// the auth header
 class AuthInterceptor extends Interceptor {
   AuthInterceptor(this._getAccessTokenUseCase);
 
