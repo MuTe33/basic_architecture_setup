@@ -1,4 +1,4 @@
-import 'package:basic_architecture_setup/feature/testpage/test_page.dart';
+import 'package:basic_architecture_setup/app/testpage/test_page.dart';
 import 'package:basic_architecture_setup/locator.dart';
 import 'package:flutter/material.dart';
 

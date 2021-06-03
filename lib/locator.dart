@@ -1,10 +1,10 @@
 import 'package:basic_architecture_setup/api/user/user_api.dart';
+import 'package:basic_architecture_setup/app/testpage/test_page_view_model.dart';
 import 'package:basic_architecture_setup/data/mapper/user_mapper.dart';
 import 'package:basic_architecture_setup/data/repository/access_token_repository.dart';
 import 'package:basic_architecture_setup/data/repository/user_repository.dart';
 import 'package:basic_architecture_setup/domain/use_case/get_access_token_use_case.dart';
 import 'package:basic_architecture_setup/domain/use_case/get_all_user_use_case.dart';
-import 'package:basic_architecture_setup/feature/testpage/test_page_view_model.dart';
 import 'package:basic_architecture_setup/service/access_token_interceptor.dart';
 import 'package:basic_architecture_setup/service/auth_interceptor.dart';
 import 'package:dio/dio.dart' as dio;

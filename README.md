@@ -1,14 +1,15 @@
 # Basic Architecture Setup 
 
 This project is a showcase of how a basic structure in code could look like. It takes a clean 
-architecture approach but with leaner setup. You can see a full example of [Uncle Bob's Clean Architecture approach for Flutter here](https://github.com/ShadyBoukhary/flutter_clean_architecture). 
-It explains everything in much more detail.   
+architecture approach but with leaner setup. Highly inspired by [Uncle Bob's Clean Architecture approach for Flutter here](https://github.com/ShadyBoukhary/flutter_clean_architecture). 
+Check that package out as it explains everything in much more depth.
 
 ## Folder structure
 
 ```
    +--- lib
         +--- api // Defined and generated API
+        +--- app // application layer with pages and viewmodels
         +--- data // responsible for data retrieval
           +--- mapper // maps data model to domain model
           +--- model // data model (DTO)
@@ -16,7 +17,6 @@ It explains everything in much more detail.
         +--- domain // business logic
           +--- model // core classes of app
           +--- usecase // defines application-specific business rules
-        +--- feature // application layer with pages and viewmodels
         +--- service // services used within the app
         +--- locator // dependency injection
         +--- main.dart // entry point
